@@ -1,0 +1,14 @@
+{
+  "name": "vue-wangeditor",
+  "version": "1.3.0",
+  "description": "an editor component of vue2.0 depended on wangeditor",
+  "dependencies": {
+    "wangeditor": "^2.1.23"
+  },
+  "main": "./src/index.js",
+  "keywords": [
+    "vue",
+    "wangeditor"
+  ],
+  "author": "duoremix"
+}

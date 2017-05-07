@@ -1,2 +1,2 @@
-# vue-wangeditor
-wangeditor component for vue
+# vueWangeditor
+an editor component of vue2.0 depended on wangeditor
