@@ -1,8 +1,8 @@
-###Vue-Wangeditor
+### Vue-Wangeditor
 
 本组件是针对wangeditor在vue2.0上封装的组件，为方便使用vue2.0的开发者封装。
 
-###Usage
+### Usage
 
 
 npm install --save vue-wangeditor
@@ -23,9 +23,10 @@ export default {
 }
 ```
 
-###配置说明
+### 配置说明
 
-####Menus
+#### Menus
+
 菜单数组：
 
 ```
@@ -67,7 +68,7 @@ export default {
 
 ```
 
-####Attribute
+#### Attribute
 
 | 参数        | 说明   |  类型  |  可选值  | 默认值 |
 | --------   | :-----:  | :----:  | -------- | -------- |
@@ -89,7 +90,7 @@ export default {
 | isRealtime      | 是否实时对绑定值进行更新   |    boolean  |  true/fasle |false |  true |
 | jsFilter      | 是否过滤js代码   |    boolean  |  true/false |  true |
 
-####Methods
+#### Methods
 
 | 方法名      | 说明   |  参数  |  返回值说明 | 返回值类型 |
 | --------   | :-----:  | :----:  | -------- | -------- |
@@ -103,7 +104,7 @@ export default {
 | destroy   | 销毁编辑器  | 无  | 无 | 无 |
 | undestroy   | 恢复编辑器  | 无  | 无 | 无 |
 
-####Events
+#### Events
 
 | 事件名        | 说明   |  参数  |  返回值说明 | 返回值类型 |
 | --------   | :-----:  | :----:  | -------- | -------- |
