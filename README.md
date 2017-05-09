@@ -26,47 +26,54 @@ export default {
 ### 配置说明
 
 #### Menus
-
 菜单数组：
 
 ```
 [
-        'source',
+        'source',	// 源码模式
         '|',
-        'bold',
-        'underline',
-        'italic',
-        'strikethrough',
-        'eraser',
-        'forecolor',
-        'bgcolor',
+        'bold',	// 粗体
+        'underline',	// 下划线
+        'italic',	// 斜体
+        'strikethrough',	// 中线
+        'eraser',	// 清空格式
+        'forecolor',	// 文字颜色
+        'bgcolor',	// 背景颜色
         '|',
-        'quote',
-        'fontfamily',
-        'fontsize',
-        'head',
-        'unorderlist',
-        'orderlist',
-        'alignleft',
-        'aligncenter',
-        'alignright',
+        'quote',	// 引用
+        'fontfamily',	// 字体
+        'fontsize',	// 字号
+        'head',	// 标题
+        'unorderlist',	// 无序列表
+        'orderlist',	// 有序列表
+        'alignleft',	// 左对齐
+        'aligncenter',	// 居中
+        'alignright',	// 右对齐
         '|',
-        'link',
-        'unlink',
-        'table',
-        'emotion',
+        'link',	// 链接
+        'unlink',	// 取消链接
+        'table',	// 表格
+        'emotion',	// 表情
         '|',
-        'img',
-        'video',
-        'location',
-        'insertcode',
+        'img',	// 图片
+        'video',	// 视频
+        'location',	// 位置
+        'insertcode',	// 插入代码
         '|',
-        'undo',
-        'redo',
-        'fullscreen'
+        'undo',	// 撤销
+        'redo',	// 重做
+        'fullscreen'	// 全屏
     ];
 
 ```
+
+#### Code Types
+
+代码类型：
+
+```
+apache/bash/coffeescript/cpp/cs/css/diff/http/ini/java/javascript/json/makefile/html/markdown/nginx/objectivec/perl/php/python/ruby/sql
+``` 
 
 #### Attribute
 
@@ -83,7 +90,7 @@ export default {
 | mapKey      | 百度地图key   |    String  |  无 |  无 |
 | menus      | 编辑器菜单   |    String  |  无 |  全部 |
 | disabledMenus      | 禁用菜单（优先级在menus后）   |    String  |  无 |  无 |
-| codeDefaultLang      | 默认插入代码类型   |    String  |  apache/bash/coffeescript/cpp/cs/css/diff/http/ini/java/javascript/json/makefile/html/markdown/nginx/objectivec/perl/php/python/ruby/sql |  javascript |
+| codeDefaultLang      | 默认插入代码类型   |    String  |  参照上方代码类型|  javascript |
 | hideLinkImg      | 是否隐藏添加网络图片功能（需配置uploadImgUrl方可生效）   |    String  |  true/false |  false |
 | menuFixed      | 是否开启菜单栏吸顶   |    String  |  true/false |  true |
 | disabled      | 是否禁用编辑器   |    boolean  |  true/false |  true |
@@ -91,7 +98,6 @@ export default {
 | jsFilter      | 是否过滤js代码   |    boolean  |  true/false |  true |
 
 #### Methods
-
 | 方法名      | 说明   |  参数  |  返回值说明 | 返回值类型 |
 | --------   | :-----:  | :----:  | -------- | -------- |
 | getHtml   | 获取编辑器当前内容的html代码片段  |  无 | 内容的html代码片段 | String |
@@ -105,7 +111,6 @@ export default {
 | undestroy   | 恢复编辑器  | 无  | 无 | 无 |
 
 #### Events
-
 | 事件名        | 说明   |  参数  |  返回值说明 | 返回值类型 |
 | --------   | :-----:  | :----:  | -------- | -------- |
 | change   | 编辑器内容变化时触发的事件  | 无  | 无 | 无 |
