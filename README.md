@@ -4,8 +4,10 @@
 
 ### Usage
 
-
+```
 npm install --save vue-wangeditor
+```
+
 
 在项目中直接引入即可：
 
