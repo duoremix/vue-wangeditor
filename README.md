@@ -4,10 +4,11 @@
 
 ###Usage
 
-```
+
 npm install --save vue-wangeditor
-```
+
 在项目中直接引入即可：
+
 ```
 <template>
   <vue-wangeditor id="editor" v-model="text></vue-wangeditor>
@@ -26,6 +27,7 @@ export default {
 
 ####Menus
 菜单数组：
+
 ```
 [
         'source',
@@ -84,10 +86,11 @@ export default {
 | hideLinkImg      | 是否隐藏添加网络图片功能（需配置uploadImgUrl方可生效）   |    String  |  true/false |  false |
 | menuFixed      | 是否开启菜单栏吸顶   |    String  |  true/false |  true |
 | disabled      | 是否禁用编辑器   |    boolean  |  true/false |  true |
-| isRealtime      | 是否实时对绑定值进行更新   |    boolean  |  true|false |  true |
+| isRealtime      | 是否实时对绑定值进行更新   |    boolean  |  true/fasle |false |  true |
 | jsFilter      | 是否过滤js代码   |    boolean  |  true/false |  true |
 
 ####Methods
+
 | 方法名      | 说明   |  参数  |  返回值说明 | 返回值类型 |
 | --------   | :-----:  | :----:  | -------- | -------- |
 | getHtml   | 获取编辑器当前内容的html代码片段  |  无 | 内容的html代码片段 | String |
@@ -101,9 +104,10 @@ export default {
 | undestroy   | 恢复编辑器  | 无  | 无 | 无 |
 
 ####Events
+
 | 事件名        | 说明   |  参数  |  返回值说明 | 返回值类型 |
 | --------   | :-----:  | :----:  | -------- | -------- |
 | change   | 编辑器内容变化时触发的事件  | 无  | 无 | 无 |
-| load   | 图片上传完成出发的事件  | originalName, resultText | originalName：文件原名  resultText：返回的数据 | OriginalName：String resultText：String |
+| load   | 图片上传完成出发的事件  | originalName, resultText | originalName：文件原名resultText：返回的数据 | OriginalName：String resultText：String |
 | timeout   | 图片上传超时触发的事件 | 无  | 无 | 无 |
 | error   | 图片上传出错触发的事件  | 无  | 无 | 无 |
