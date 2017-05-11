@@ -38,9 +38,8 @@
         this.editor = new Wangeditor(this.id)
         this.editor.config.uploadImgUrl = this.uploadImgUrl
         this.editor.config.uploadImgFns.onload = (resultText, xhr) => {
-        let originalName = this.editor.uploadImgOriginalName || ''
-        this.editor.command(null, 'insertHtml', '<img src=' + resultText + ' style="max-width:100%;"/>')
-        this.$emit('load', originalName, resultText)
+          let originalName = this.editor.uploadImgOriginalName || ''
+          this.$emit('load', originalName, resultText)
         }
         this.editor.config.uploadImgFns.ontimeout = (xhr) => {
           this.$emit('timeout')
@@ -115,6 +114,9 @@
           menusToString.substr(1, menusToString.length)
         }
         return menusToString.split(',')
+      },
+      insertImg(url) {
+        this.editor.command(null, 'insertHtml', '<img src=' + url + ' style="max-width:100%;"/>')
       },
       // 获取内容(html)
       getHtml() {
