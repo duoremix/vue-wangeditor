@@ -6,8 +6,8 @@
 
 ```
 npm install --save vue-wangeditor
-```
 
+```
 在项目中直接引入即可：
 
 ```
@@ -119,7 +119,6 @@ apache/bash/coffeescript/cpp/cs/css/diff/http/ini/java/javascript/json/makefile/
 | load   | 图片上传完成出发的事件  | originalName, resultText | originalName：文件原名resultText：返回的数据 | OriginalName：String resultText：String |
 | timeout   | 图片上传超时触发的事件 | 无  | 无 | 无 |
 | error   | 图片上传出错触发的事件  | 无  | 无 | 无 |
-
 
 
 #### 版本更新
