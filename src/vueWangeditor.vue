@@ -158,8 +158,12 @@
       listenChange() {
         this.editor.onchange = () => {
           this.$emit('change')
+          let result = ''
+          if (!this.getText()) {
+            result = this.getHtml()
+          }
           if (this.isRealtime !== false) {
-            this.$emit('input', this.getHtml())
+            this.$emit('input', result)
           }
         }
       }
