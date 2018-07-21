@@ -97,17 +97,19 @@
       },
       // 筛选编辑器菜单
       filterMenu(menus) {
-        return _.map(menus, (item, key) => {
-          if (item === 'source') {
-            return null
-          }
-          return item
-        })
+        if (menus instanceof Array) {
+          return menus.map((item, key) => {
+            if (item === 'source') {
+              return null
+            }
+            return item
+          })
+        }
       },
       // 筛选不可用菜单
       filterDisabledMenu(menus, disabledMenus) {
         let menusToString = menus.join(',')
-        _(disabledMenus).forEach((res) => {
+        disabledMenus.forEach((res) => {
           menusToString = menusToString.replace(res, '').replace(',,', ',')
         })
         if (menusToString.length && menusToString[0] == ',') {
